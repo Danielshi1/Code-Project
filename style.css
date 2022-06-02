@@ -1,0 +1,41 @@
+.screen_container {
+  width: 800px;
+  max-width: 500px;
+  height: 400px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+}
+.text_container {
+  height: 300px;
+  background-color: #00db75;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px;
+}
+@media (max-width: 1200px) {
+  .screen_container .text_container {
+    width: 95%;
+  }
+}
+
+btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: hsl(200, 100%, 50%);
+  border: 1px solid hsl(200, 100%, 30%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
